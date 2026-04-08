@@ -8,3 +8,23 @@ categories:
     labels: ['fix']
   - title: 🧰 Maintenance
     labels: ['chore', 'refactor']
+
+# Required template section
+template: |
+  ## Changes
+  $CHANGES
+
+# Optional: message when no changes
+no-changes-template: '* No changes'
+
+# Optional: other settings
+version-template: '$MAJOR.$MINOR.$PATCH$PRERELEASE'
+version-resolver:
+  major:
+    labels: ['major']
+  minor:
+    labels: ['minor']
+  patch:
+    labels: ['patch']
+  default: 'patch'
+  
